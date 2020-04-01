@@ -1,0 +1,121 @@
+<head>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel = "stylesheet" href="css/custom.css">
+</head>
+<div class ="container">
+    
+    <div class ="row section" style= "text-align: center;  padding-top: 20px; background-color: #610536">
+        <div class ="three columns">
+            <h3 class="nameHeader">Magenta</h3>
+       </div>
+        <div class ="three columns" style = "padding-top: 10px">
+            <a class = "agButton1" href = "index.html">About</a>
+       </div>
+        <div class ="three columns" style = "padding-top: 10px" >
+            <a class ="agButton1" style = "color: #fcc738"  href = "blogs.html">Dev Blogs</a>
+        </div>
+        <div class ="three columns" style = "padding-top: 10px" >
+            <a class ="agButton1" href = "contact.html">Contact</a>
+        </div>
+    </div>
+    <div class = "row section" style="padding-top: 20px; text-align: center">
+        <div class="twelve columns">
+            <h3 class="nameHeader" style="color:brown">Blog 1 - Where are we now?</h3>
+        <!--<em style="font-size: 50">Blogs</em>-->
+        </div>
+    </div>
+    
+    <div class = "row section" style="padding-top: 20px; text-align: center">
+        <div class="twelve columns">
+            <h4 class="nameHeader" style="color:brown">Where the Game is now</h4>
+        <!--<em style="font-size: 50">Blogs</em>-->
+        </div>
+    </div>
+    
+    <div class="row section">
+        <div class="twelve columns">
+            <p class="indent" style="font-size: 20px">
+            For the first dev log, I want to go over what systems are already in place in Magenta, and what still needs to be made.  
+            </p>
+        </div>
+    
+    
+    </div>
+    
+     <div class = "row section" style="padding-top: 20px; text-align: center">
+        <div class="twelve columns">
+            <h4 class="nameHeader" style="color:brown">Player-Movement</h4>
+        <!--<em style="font-size: 50">Blogs</em>-->
+        </div>
+    </div>
+    
+     <div class="row section">
+        <div class="twelve columns">
+            <p class="indent" style="font-size: 20px">
+            The player controller script is effectively done at this point, the player can jump, mantle, sprint, lean left and right, dodge and crouch.  Mantling took a very long time to get right, and still needs a bit of polishing, however the basic modes of movement within Magenta are complete. 
+            </p>
+        </div>
+    
+    
+    </div>
+    
+        
+     <div class = "row section" style="padding-top: 20px; text-align: center">
+        <div class="twelve columns">
+            <h4 class="nameHeader" style="color:brown">Enemies and NPCs</h4>
+        <!--<em style="font-size: 50">Blogs</em>-->
+        </div>
+    </div>
+    
+     <div class="row section">
+        <div class="twelve columns">
+            <p class="indent" style="font-size: 20px">
+            	The script which controls the majority of NPC movement and perception currently has light sensitive visual detection of the player, meaning that any enemy character’s ability to detect the player is dependent on how well lit the player is (we’ll get into that more later).  The enemies also have a rudimentary sense of hearing, able to face the player (but not necessarily see)  whenever they make enough noise.  The AI also has a recently added neutral and hostile setting, allowing for passive NPCs, as well as for mid level alignment switches.   Another no longer recent addition is an animated character model.  Currently the added character model can walk, run, switch between a combat and passive idle animation, and launch a simple attack.  An updated guard model is partially in existence, still untextured but all rigged up and cozy in his plating.
+
+            </p>
+        </div>
+    
+    
+    </div>
+    
+     <div class = "row section" style="padding-top: 20px; text-align: center">
+        <div class="twelve columns">
+            <h4 class="nameHeader" style="color:brown">Level State Systems</h4>
+        <!--<em style="font-size: 50">Blogs</em>-->
+        </div>
+    </div>
+    
+     <div class="row section">
+        <div class="twelve columns">
+            <p class="indent" style="font-size: 20px">
+            The most recent system added to Magenta is the new level state system.  Currently it’s still rather bare bones but it does mark an important step for the level design process.  The designer can now place restricted area volumes, as I like to call them.  When the player is within one of these volumes (just a basic old unity collider marked as a trigger), they’re marked as trespassing, turning the Enemy NPCs from their neutral, player impartial state, to a hostile state, in which they’ll do their best to forcefully remove the player from the restricted area.
+
+            </p>
+        </div>
+    
+    
+    </div>
+    
+         <div class = "row section" style="padding-top: 20px; text-align: center">
+        <div class="twelve columns">
+            <h4 class="nameHeader" style="color:brown">Things to Do</h4>
+        <!--<em style="font-size: 50">Blogs</em>-->
+        </div>
+    </div>
+    
+     <div class="row section">
+        <div class="twelve columns">
+            <p class="indent" style="font-size: 20px">
+            A few big things need to be added.  For one, the NPCs are in desperate need of audio barks that communicate to the player their awareness level and intentions.  There also needs to be a way to exploit the NPCs’ sound awareness, ways to get enemies looking the other direction or moving towards distractions.  The first step of this will be creating a system for sound based distractions.  For example, should a player pick up a rigidbody prop, like a soda can, upon impact with the ground, the object should make a noise that could attract the attention of an NPC.
+            </p>
+
+            <p class="indent" style="font-size: 20px">
+            	Another addition that needs to be worked on at some point unless the design objectives of this project change dramatically, is a more full implementation of the melee combat system.  For that I’ll need to finish up a set of first person animations, add blocking animations to both the first person arms and the NPC enemies, figure out how to make blocking actually work, and then begin the truly difficult part, making it fun.
+            </p>
+        </div>
+    
+    
+    </div>
+    
+    
