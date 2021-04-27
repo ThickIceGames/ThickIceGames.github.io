@@ -1,0 +1,147 @@
+<head>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel = "stylesheet" href="css/custom.css">
+</head>
+<div class ="container">
+    
+    <div class ="row section" style= "text-align: center;  padding-top: 20px; background-color: #451521">
+        <div class ="three columns">
+            <h3 class="nameHeader">Magenta</h3>
+       </div>
+        <div class ="three columns" style = "padding-top: 10px">
+            <a class = "agButton1" href = "index.html">About</a>
+       </div>
+        <div class ="three columns" style = "padding-top: 10px" >
+            <a class ="agButton1" style = "color: #fcc738"  href = "blogs.html">Dev Blogs</a>
+        </div>
+        <div class ="three columns" style = "padding-top: 10px" >
+            <a class ="agButton1" href = "media.html">Media</a>
+        </div>
+    </div>
+    <div class = "row section" style="padding-top: 20px; text-align: center">
+        <div class="twelve columns">
+            <h3 class="nameHeader" style="color:brown">Blog 3 - New art, New AI</h3>
+        <!--<em style="font-size: 50">Blogs</em>-->
+        </div>
+    </div>
+         <div class = "row section" style="padding-top: 20px;text-align: center">
+        <div class="twelve columns">
+            <h4 class="nameHeader" style="color:brown">New Environment Art</h4>
+        <!--<em style="font-size: 50">Blogs</em>-->
+        </div>
+    </div>
+    
+     <div class="row section" style="padding-top: 20px">
+        <div class="twelve columns">
+           <a href="images/Screenshot%20(30).png"><img style="width:700px; height: auto; display: block; margin:0 auto; margin-bottom: 20px" src="images/Screenshot%20(30).png"></a>
+        </div>
+    </div>
+           <div class="row section">
+        <div class="twelve columns">
+            <p class="indent" style="font-size: 20px">
+            While all of it is still work in progress, I've done quite a bit of work developing art assets over the past year.  I've been splitting up my environment asset sets between different levels of modularity and detail.  The furthest assets are the least detailed, and in some ways the most modular, despite having the least design consideration given to their modularity.  They're constructed of simple shapes, built to look like distant megabuildings, they're as of yet untextured, however expect to see rows of emmissive windows, and all kinds of fancy textural greebling.  The next level of detail up would be the "near building blocks", slightly smaller building assets designed as complete packages without interiors in mind, meant to block out exterior spaces and act as the roughest layer of geometry that actually serves to bound the player into the level space.  The final levels would be the greebling, prop, and interior layers.  These asset sets are the most detailed, and serve to both incease the level of detail and add a degree of realism to the scene, as well as to serve as connective tissue between areas of the scene.  That connective property is why I've focused on developing piping and wiring first when it comes to greebling.  Not only does it give me an excuse to place more scaffolding to allow the player to explore (and hide) verticaly, it also is excellent for guiding the player visually through different areas of the scene.
+        </div>
+    
+    </div>
+    
+       <div class="row section" style="padding-top: 20px">
+        <div class="four columns">
+            <figure>
+           <a href="images/Screenshot%20(33).png"><img style="width:400; height: auto; display: block; margin:0 auto; margin-bottom: 20px" src="images/Screenshot%20(33).png"></a>
+                <figcaption>Nearest assets, "Greebling"</figcaption>
+                </figure>
+        </div>
+                   <div class="four columns">
+                       <figure>
+           <a href="images/Screenshot%20(34).png"><img style="width:150; height: auto; display: block; margin:0 auto; margin-bottom: 20px" src="images/Screenshot%20(34).png"></a>
+                       <figcaption style="padding-left: 75px">"Near Building Block"</figcaption>
+                           </figure>
+        </div>
+                   <div class="four columns">
+                       <figure>
+           <a href="images/Screenshot%20(35).png"><img style="width:400; height: auto; display: block; margin:0 auto; margin-bottom: 20px" src="images/Screenshot%20(35).png"></a>
+                           <figcaption>Furthest assets, "Large Building Blocks"</figcaption>
+                           </figure>
+        </div>
+           
+    </div>
+    
+    <div class = "row section" style="padding-top: 20px;text-align: center">
+        <div class="twelve columns">
+            <h4 class="nameHeader" style="color:brown">New Character Art</h4>
+        <!--<em style="font-size: 50">Blogs</em>-->
+        </div>
+    </div>
+    
+     <div class="row section" style="padding-top: 20px">
+        <div class="twelve columns">
+           <a href="images/Screenshot%20(39).png"><img style="width:700px; height: auto; display: block; margin:0 auto; margin-bottom: 20px" src="images/Screenshot%20(39).png"></a>
+        </div>
+    </div>
+           <div class="row section">
+        <div class="twelve columns">
+            <p class="indent" style="font-size: 20px">
+         I've improved the Guard model since the last update, adding armor and new directional attack and block animations.  I've also spent a great deal of time implementing a new animation machine and manager to the character, using Unity's Mecanim Avatar system.  My main purpose in using the Avatar system was to allow the enemy's swing animation to be disconntected from it's run animation.  One of the early observations I recieved from a tester was that the enemies were a bit "unintimidating", and inneffective at actually damaging the player.  When the guard would stop in his tracks to complete his attack animation, it was far to easy to escape him.  My solution was to allow the guard to continue attacking while running, and to lenghten his weapon.  Additionally, part of the guards attacking logic checks the direction of player movement, meaning juking out the guards will become much more difficult as they will anticipate the direction you're moving in.  I've also added a new enemy type, a cylinderical security robot used by the Temple.
+        </div>
+               
+                      <div class="row section" style="padding-top: 20px">
+        <div class="four columns">
+            <figure>
+           <a href="images/Screenshot%20(43).png"><img style="width:400; height: auto; display: block; margin:0 auto; margin-bottom: 20px" src="images/Screenshot%20(43).png"></a>
+                <figcaption>A guard blocking an attack from the right</figcaption>
+                </figure>
+        </div>
+                   <div class="four columns">
+                       <figure>
+           <a href="images/Screenshot%20(46).png"><img style="width:400; height: auto; display: block; margin:0 auto; margin-bottom: 20px" src="images/Screenshot%20(46).png"></a>
+                       <figcaption style="padding-left: 75px">Guard launching an attack from the left</figcaption>
+                           </figure>
+        </div>
+                   <div class="four columns">
+                       <figure>
+           <a href="images/Screenshot%20(29).png"><img style="width:400; height: auto; display: block; margin:0 auto; margin-bottom: 20px" src="images/Screenshot%20(29).png"></a>
+                           <figcaption>Guards on their routes</figcaption>
+                           </figure>
+        </div>
+           
+    </div>
+    </div>
+    <div class = "row section" style="padding-top: 20px;text-align: center">
+        <div class="twelve columns">
+            <h4 class="nameHeader" style="color:brown">New AI</h4>
+        <!--<em style="font-size: 50">Blogs</em>-->
+        </div>
+    </div>
+    
+     <div class="row section" style="padding-top: 20px">
+        <div class="twelve columns">
+           <a href="images/Screenshot%20(54).png"><img style="width:700px; height: auto; display: block; margin:0 auto; margin-bottom: 20px" src="images/Screenshot%20(54).png"></a>
+        </div>
+    </div>
+           <div class="row section">
+        <div class="twelve columns">
+            <p class="indent" style="font-size: 20px">
+         I've rewritten the basic detection and navigation systems of my AI to make them a little more modular, and fit in to my new hierarchical method of designing bots.  I decided to make the change when I was considering how to add the new robotic enemy type.  Ultimately there were too many specific calls to the animation machine to keep the attacking and animation handling scripts in one universal AI script.  Additionally, since I wanted to introduce a variety of different behaviours and attack patterns, it would've been impossible to maintain readable and easily debuggable code while having that many possible behavior patterns that could be enabled.  The way I've designed my new bot hierarchy is, on the bottom level, you have the detection script, this is the most generalizable and can be used by any Agent.  It just checks how well the agent is able to see the player based off light level and occlusion, and how well the player can be heard based on how they're moving and what acoustic environment they're in.  The level above that is their navigation script, which determines how they may reach the player, at what rate, whether or not they have a patrol route, and general movement logic.  The Navigation script is dependant on the detection script to figure out the players location.  The layer above that is where things start getting specific.  For each enemy type there's a specific script for combat logic as well as an animation managing script.  The combat logic script is dependant on the detection script for learning the players location, however at a certain range it takes over for the movement script when it comes to navigational logic.  Since Magenta's combat is animation driven, the combat and animation scripts are fairly interdependent.
+                
+    </div>
+    </div>
+    <div class = "row section" style="padding-top: 20px;text-align: center">
+        <div class="twelve columns">
+            <h4 class="nameHeader" style="color:brown">What's Next</h4>
+        <!--<em style="font-size: 50">Blogs</em>-->
+        </div>
+    </div>
+    
+     <div class="row section" style="padding-top: 20px">
+        <div class="twelve columns">
+           <img style="width:700px; height: auto; display: block; margin:0 auto; margin-bottom: 20px" src="images/Screenshot%20(55).png">
+        </div>
+    </div>
+           <div class="row section">
+        <div class="twelve columns">
+            <p class="indent" style="font-size: 20px">
+    A long time ago I said I was going to build a combat demo and put it on itch.io.  I still haven't done that yet.  However, I have been buidling a vertical slice level for a little while now, I'm not sure when that will be finished, but hopefully sooner rather than later.  Once that slice is finished, there wil be <em>some</em> kind of media about it released, possibly a playable demo, possibly just a video.  In the meantime, I'll try and keep this blog a little more updated.  Thank you for reading!
+                
+    </div>
+    </div>
